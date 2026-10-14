@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resoluçao da ficha 02</title>
     <style>
-        body{
-            background-color:#f2f2f2    
+        body {
+            background-color: #f2f2f2
         }
-        ul{ 
+
+        ul {
             background-color: lightblue;
         }
-        ol{
+
+        ol {
             background-color: rgb(255, 236, 179);
         }
     </style>
 </head>
+
 <body>
     <h1>Listas</h1>
     <hr color="grey">
@@ -24,28 +28,78 @@
         <li> Faculdade de Engenharia</li>
         <ul style="list-style-type: square">
             <li>Departamento</li>
-                <ul style="list-style-type: disc">
-                    <li>DECQ</li>
-                    <li>DEC</li>
-                    <li>DECC</li>
-                    <li>...</li>
-                </ul>
+            <ul style="list-style-type: disc">
+                <li>DECQ</li>
+                <li>DEC</li>
+                <li>DECC</li>
+                <li>...</li>
+            </ul>
             <li>Seviços</li>
-                 <ul style="list-style-type: disc">
-                    <li>CICA</li>
-                    <li>Biblioteca</li>
-                    <li>...</li>
-                </ul>
+            <ul style="list-style-type: disc">
+                <li>CICA</li>
+                <li>Biblioteca</li>
+                <li>...</li>
+            </ul>
         </ul>
         <li> Faculdade de Mdecicina</li>
     </ul>
-        <hr color="grey">
-        <h2>Listas Numeradas</h2>
-        <ol type="A">
-            <li>Escola da Luz</li>
-            <li>Escola da Paz</li>
+    <hr color="grey">
+    <h2>Listas Numeradas</h2>
+    <ol type="A">
+        <li>Escola da Luz</li>
+        <ol>
+            <li>Ano</li>
+            <ol type="i">
+                <li>Turma A</li>
+                <li>Turma B</li>
+            </ol>
+            <li>Ano</li>
+            <ol type="i">
+                <li>Turma A</li>
+                <li>Turma B</li>
+            </ol>
         </ol>
 
-    
+        <li>Escola da Paz</li>
+        <ol>
+            <li>Ano</li>
+            <ol type="i">
+                <li>Turma E</li>
+                <li>Turma F</li>
+            </ol>
+            <li>Ano</li>
+            <ol type="i">
+                <li>Turma C</li>
+                <li>Turma D</li>
+            </ol>
+        </ol>
+    </ol>
+    <hr color="grey">
+    <h2>Lista de Definições</h2>
+    <p>Coisa</p>
+    <blockquote>O que se chama a um objeto na falta de melhor</blockquote>
+    <p>Objeto</p>
+    <blockquote>O que se chama a uma coisa quando não ocorre outra</blockquote>
+    <h2>Disciplinas do curso</h2>
+    <ul style="list-style-type: circle;">
+        <li>Redes</li>
+        <li>Sistemas operativos</li>
+        <li>Programação</li>
+        <ul style="list-style-type: square;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+
+        </ul>
+        <li>Segurança</li>
+        <li>Hardware</li>
+    </ul>
+    <ol type="1" start="3">
+        <li>Atribuir</li>
+        <li>Selecionar</li>
+        <li>Iniciar</li>
+    </ol>
+
 </body>
+
 </html>
