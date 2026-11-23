@@ -18,9 +18,10 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 35px;
             color: blue;
-            text-align: center  ;
+            text-align: center;
         }
-        form{
+
+        form {
             margin-left: 100px;
         }
     </style>
@@ -29,7 +30,47 @@
 <body>
     <h1>Exemplo de fomulários 1</h1>
     <form action="" method="post">
-        <label for="nomep">Nome:</label>
+        <fieldset>
+            <legend>Dados pessoais</legend><br>
+            <table>
+                <td><label for="nomep">Nome:</label></td>
+                <td><input type="text" name="nomep" size="100" maxlength="100" required></td>
+                <tr>
+                    <td><label for="morada">Morada:</label></td>
+                    <td><input type="text" name="morada" size="150" maxlength="150" required></td>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" size="50" required></td>
+                <tr>
+                    <td><label for="telemovel">Telemóvel:</label></td>
+                    <td><input type="number" name="telemovel" required></td>
+                <tr>
+                    <td><label for="datanasc">Data de nascimento:</label></td>
+                    <td><input type="date" name="datanasc"></td>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Dados complementares</legend><br>
+            <label for="estado">Estado civil:</label>
+            <input type="radio" name="estado" value="S">Solteiro
+            <input type="radio" name="estado" value="C">Casado
+            <input type="radio" name="estado" value="V">Viuvo
+            <input type="radio" name="estado" value="D">Divorciado <br>
+            <label for="regiao">Região:</label>
+            <select name="regiao" id="regiao">
+                <option value="1">Norte</option>
+                <option value="2">Centro</option>
+                <option value="3">Sul</option>
+            </select><br>
+            <label for="desportos">Desportos favoritos</label>
+            <input type="checkbox" id="desporto1" value="1">Futebol
+            <input type="checkbox" id="desporto2" value="1">Voleibol
+            <input type="checkbox" id="desporto3" value="1" checked>Padel
+            <input type="checkbox" id="desporto4" value="1">Basketball
+            <input type="checkbox" id="desporto5" value="1">Handball
+        </fieldset>
+        <center><input type="submit" value="Submeter formulario"></center>
+
     </form>
 </body>
 
